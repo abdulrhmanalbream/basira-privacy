@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <title>سياسة الخصوصية | بَصيرة</title>
+    <style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+    background: #FDF8F0;
+    color: #1C1B1F;
+    line-height: 1.7;
+}
+.container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(93, 64, 55, 0.15);
+}
+.topbar a {
+    color: #5D4037;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: #FAF3E8;
+    font-size: 14px;
+}
+.topbar a:hover { background: #D4A853; color: #fff; }
+.brand { color: #D4A853; font-weight: 700; font-size: 20px; }
+h1 { color: #5D4037; font-size: 28px; margin-top: 32px; }
+h2 { color: #5D4037; font-size: 22px; margin-top: 40px; padding-bottom: 8px; border-bottom: 2px solid #D4A853; }
+h3 { color: #5D4037; font-size: 18px; margin-top: 28px; }
+h4 { color: #8B6B61; font-size: 16px; margin-top: 20px; }
+a { color: #D4A853; }
+strong { color: #5D4037; }
+code {
+    background: #FAF3E8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #5D4037;
+}
+hr { border: 0; border-top: 1px solid rgba(93, 64, 55, 0.15); margin: 32px 0; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+th, td {
+    padding: 10px 12px;
+    text-align: start;
+    border-bottom: 1px solid rgba(93, 64, 55, 0.12);
+}
+th {
+    background: #FAF3E8;
+    color: #5D4037;
+    font-weight: 600;
+}
+ul { padding-inline-start: 24px; }
+li { margin-bottom: 6px; }
+blockquote {
+    border-inline-start: 4px solid #D4A853;
+    margin: 16px 0;
+    padding: 8px 16px;
+    background: #FAF3E8;
+    border-radius: 8px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="topbar">
+            <a href="./" class="brand">بَصيرة · Basira</a>
+            <a href="./en.html">English</a>
+        </header>
+        <article>
+<h1 id="-">سياسة الخصوصية - تطبيق بَصيرة | اتّزانك الرقمي</h1>
+<p><strong>تاريخ آخر تحديث:</strong> 17 مايو 2026
+<strong>تاريخ السريان:</strong> 17 مايو 2026</p>
+<hr />
+<h2 id="_1">مقدمة</h2>
+<p>نحن في تطبيق <strong>بَصيرة | اتّزانك الرقمي</strong> ("نحن"، "التطبيق"، "بَصيرة") نحترم خصوصيتك ونلتزم بحمايتها. هذه السياسة تشرح بوضوح وشفافية ما هي البيانات التي يصل إليها التطبيق، وكيف نستخدمها، ومن يطّلع عليها.</p>
+<p><strong>المبدأ الأساسي:</strong> بَصيرة تطبيق <strong>محلي بالكامل (Offline-first)</strong> — جميع بياناتك تبقى على جهازك ولا تُرسَل إلى أي خوادم خارجية، إلا في الحالات المحدودة جدًا الموضّحة أدناه.</p>
+<p><strong>الجمهور المستهدف:</strong> التطبيق مصمَّم لجمهور مختلط من جميع الأعمار <strong>اعتبارًا من 6 سنوات فما فوق</strong>، بما في ذلك الطلاب والمراهقون والبالغون. التطبيق آمن للاستخدام من قِبَل الأطفال — لا يجمع بيانات شخصية ولا يعرض إعلانات ولا يحتوي على روابط خارجية إلى محتوى غير لائق.</p>
+<hr />
+<h2 id="1">1. البيانات التي يصل إليها التطبيق</h2>
+<h3 id="11-notifications">1.1 محتوى الإشعارات (Notifications)</h3>
+<ul>
+<li><strong>ما الذي يصل إليه:</strong> عناوين الإشعارات ومحتواها واسم التطبيق المرسِل.</li>
+<li><strong>لماذا:</strong> لتصنيف الإشعارات (مهمة / عادية / تأجيل) وتطبيق الفلترة الذكية حسب وضعك (تركيز، نوم، إلخ).</li>
+<li><strong>كيف نستخدمها:</strong> المعالجة تتم <strong>محليًا على جهازك فقط</strong> عبر <code>NotificationListenerService</code>. لا نرسل أي محتوى إشعار إلى السحابة أو أي خادم.</li>
+<li><strong>التخزين:</strong> سجلّ الإشعارات المحجوبة يُخزَّن محليًا في قاعدة بيانات Room المشفّرة على جهازك، ويُحذف تلقائيًا بعد 30 يومًا.</li>
+</ul>
+<h3 id="12-accessibility-service">1.2 محتوى الشاشة عبر إمكانية الوصول (Accessibility Service)</h3>
+<ul>
+<li><strong>ما الذي يصل إليه:</strong> أسماء الشاشات وعناصر واجهة التطبيقات الأخرى (مثل تيك توك، إنستجرام، يوتيوب) عند فتحها — وذلك فقط للكشف عن صفحات الفيديوهات القصيرة (Shorts/Reels).</li>
+<li><strong>لماذا:</strong> لمنع فتح صفحات المحتوى الإدماني وعرض شاشة التدخل (Intervention Screen).</li>
+<li><strong>ما الذي لا نصل إليه ولا نقرأه:</strong></li>
+<li><strong>لا نقرأ المحادثات الخاصة ولا الرسائل.</strong></li>
+<li><strong>لا نقرأ كلمات المرور أو بيانات الدخول.</strong></li>
+<li><strong>لا نسجّل أي شيء يكتبه المستخدم.</strong></li>
+<li><strong>التخزين:</strong> لا يُخزَّن شيء من محتوى الشاشة. المعالجة فورية ومؤقتة في الذاكرة فقط.</li>
+</ul>
+<h3 id="13-contacts">1.3 جهات الاتصال (Contacts)</h3>
+<ul>
+<li><strong>ما الذي يصل إليه:</strong> قائمة جهات الاتصال — فقط الأسماء وأرقام الهواتف.</li>
+<li><strong>لماذا:</strong> لتحديد "قائمة العائلة" المسموح بإشعاراتها دائمًا.</li>
+<li><strong>كيف نستخدمها:</strong> الجهات التي تختارها أنت يدويًا تُخزَّن محليًا. <strong>لا نرفع قائمة جهات اتصالك إلى أي خادم.</strong></li>
+</ul>
+<h3 id="14-location">1.4 الموقع الجغرافي (Location)</h3>
+<ul>
+<li><strong>ما الذي يصل إليه:</strong> الإحداثيات التقريبية (الدقيقة عند الحاجة) ومدينتك.</li>
+<li><strong>لماذا:</strong> حساب مواقيت الصلاة بدقة محليًا (يستخدم خوارزمية حسابية محلية مثل أم القرى).</li>
+<li><strong>كيف نستخدمها:</strong> يُستخدم الموقع لحظة واحدة فقط لاسترجاع المدينة وحساب المواقيت، ويُخزَّن اسم المدينة (لا الإحداثيات) محليًا. <strong>لا نرسل موقعك إلى أي خادم.</strong></li>
+</ul>
+<h3 id="15-usage-stats">1.5 إحصائيات الاستخدام (Usage Stats)</h3>
+<ul>
+<li><strong>ما الذي يصل إليه:</strong> الوقت الذي تقضيه في التطبيقات المختلفة (مدة الفتح والاستخدام).</li>
+<li><strong>لماذا:</strong> عرض تقارير استخدامك وتطبيق حدود الوقت التي تضعها أنت.</li>
+<li><strong>كيف نستخدمها:</strong> المعالجة محلية بالكامل ولا تُشارك مع أي طرف ثالث.</li>
+</ul>
+<h3 id="16-installed-apps">1.6 قائمة التطبيقات المثبتة (Installed Apps)</h3>
+<ul>
+<li><strong>ما الذي يصل إليه:</strong> أسماء التطبيقات المثبتة على جهازك.</li>
+<li><strong>لماذا:</strong> عرضها في قائمة "إدارة التطبيقات" لتختار أيها تريد فلترة إشعاراته أو تقييد وقته.</li>
+<li><strong>كيف نستخدمها:</strong> القائمة تُعرض محليًا فقط ولا تُرسَل لأي مكان.</li>
+</ul>
+<hr />
+<h2 id="2">2. ما الذي <strong>لا</strong> نقوم به</h2>
+<ul>
+<li>❌ <strong>لا نجمع بياناتك الشخصية</strong> (اسم، بريد، رقم هاتف، إلخ) — التطبيق لا يطلب تسجيل دخول.</li>
+<li>❌ <strong>لا نتتبّعك</strong> عبر أي خدمة Analytics أو Crash Reporting خارجية.</li>
+<li>❌ <strong>لا نعرض إعلانات</strong> ولا نشارك بيانات مع شبكات إعلانية.</li>
+<li>❌ <strong>لا نبيع بياناتك</strong> لأي طرف ثالث، ولا مقابل المال ولا مجانًا.</li>
+<li>❌ <strong>لا نستخدم بياناتك للتدريب</strong> على نماذج ذكاء اصطناعي.</li>
+<li>❌ <strong>لا نقرأ محتوى محادثاتك</strong> في تيك توك أو إنستجرام أو يوتيوب أو غيرها.</li>
+</ul>
+<hr />
+<h2 id="3">3. أين تُخزَّن بياناتك؟</h2>
+<p>كل بياناتك تُخزَّن محليًا على جهازك فقط:</p>
+<ul>
+<li><strong>قاعدة بيانات Room</strong> (مشفّرة بنظام Android): لسجلّ الإشعارات، إعدادات الجلسات، تقدم الختمة، إلخ.</li>
+<li><strong>DataStore</strong>: للإعدادات والتفضيلات.</li>
+<li><strong>النسخ الاحتياطي السحابي من Android</strong>: يتم وفق قواعد محدّدة (انظر <code>data_extraction_rules.xml</code>) — تُنسخ الإعدادات الأساسية ولكن <strong>لا</strong> تُنسخ سجلات الإشعارات الحساسة.</li>
+</ul>
+<hr />
+<h2 id="4">4. الصلاحيات والمبررات</h2>
+<table>
+<thead>
+<tr>
+<th>الصلاحية</th>
+<th>الغرض</th>
+<th>اختياري؟</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td>
+<td>فلترة الإشعارات الذكية</td>
+<td>إلزامي للميزة</td>
+</tr>
+<tr>
+<td><code>BIND_ACCESSIBILITY_SERVICE</code></td>
+<td>كشف صفحات الشورتس وحجبها</td>
+<td>إلزامي للميزة</td>
+</tr>
+<tr>
+<td><code>READ_CONTACTS</code></td>
+<td>تحديد جهات العائلة المسموحة</td>
+<td>اختياري</td>
+</tr>
+<tr>
+<td><code>ACCESS_FINE_LOCATION</code></td>
+<td>حساب مواقيت الصلاة</td>
+<td>اختياري (يمكن إدخال المدينة يدويًا)</td>
+</tr>
+<tr>
+<td><code>PACKAGE_USAGE_STATS</code></td>
+<td>إحصائيات استخدام التطبيقات</td>
+<td>اختياري</td>
+</tr>
+<tr>
+<td><code>SYSTEM_ALERT_WINDOW</code></td>
+<td>عرض شاشة التدخل وتنبيهات الصلاة فوق التطبيقات</td>
+<td>إلزامي لميزة التدخل</td>
+</tr>
+<tr>
+<td><code>POST_NOTIFICATIONS</code></td>
+<td>إرسال تنبيهات الصلاة والأذكار</td>
+<td>اختياري</td>
+</tr>
+<tr>
+<td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code></td>
+<td>جدولة منبهات الصلاة بدقة</td>
+<td>اختياري</td>
+</tr>
+<tr>
+<td><code>RECEIVE_BOOT_COMPLETED</code></td>
+<td>إعادة تشغيل التنبيهات بعد إعادة تشغيل الجهاز</td>
+<td>إلزامي للتنبيهات</td>
+</tr>
+<tr>
+<td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+<td>استمرار خدمة الحماية في الخلفية</td>
+<td>إلزامي للميزة</td>
+</tr>
+<tr>
+<td><code>QUERY_ALL_PACKAGES</code></td>
+<td>عرض قائمة التطبيقات لإدارتها</td>
+<td>إلزامي لميزة الإدارة</td>
+</tr>
+<tr>
+<td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td>
+<td>منع نظام البطارية من إيقاف الخدمة</td>
+<td>إلزامي لاستمرار الحماية</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. مشاركة البيانات مع أطراف ثالثة</h2>
+<p><strong>لا نشارك بياناتك مع أي طرف ثالث.</strong> التطبيق لا يتصل بأي خادم خارجي بشكل افتراضي.</p>
+<p>الاستثناءات:
+- <strong>خدمة Google Play Services</strong>: تُستخدم فقط للحصول على الموقع التقريبي بكفاءة (إن منحت الصلاحية). تخضع هذه الخدمة لـ<a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.
+- <strong>نسخ Android الاحتياطي</strong>: قد يحفظ Android نسخة احتياطية من بعض بيانات التطبيق في حساب Google الخاص بك إذا فعّلت ذلك في إعدادات نظامك. هذا خارج عن سيطرتنا ويخضع لسياسات Google.</p>
+<hr />
+<h2 id="6">6. أمان البيانات</h2>
+<ul>
+<li>جميع البيانات المحلية محمية بآليات أمان Android القياسية (Sandbox).</li>
+<li>لا يوجد API خارجي يُرسَل إليه أي شيء.</li>
+<li>نوصي بتفعيل قفل الشاشة (PIN/بصمة) على جهازك لحماية بياناتك.</li>
+</ul>
+<hr />
+<h2 id="7">7. حقوقك</h2>
+<p>بصفتك مستخدم بَصيرة، لك الحق في:
+- <strong>حذف بياناتك:</strong> بإلغاء تثبيت التطبيق، تُحذف <strong>كل</strong> بياناتك المحلية فورًا.
+- <strong>سحب الصلاحيات:</strong> يمكنك سحب أي صلاحية في أي وقت من إعدادات النظام.
+- <strong>الاستفسار:</strong> لأي سؤال أو طلب، تواصل معنا (انظر القسم 10).</p>
+<hr />
+<h2 id="8">8. أمان الأطفال</h2>
+<p>بَصيرة آمن للاستخدام من قِبَل الأطفال (من عمر 6 سنوات فأكثر) ضمن جمهور مختلط، وفق المعايير التالية:</p>
+<h3 id="81">8.1 لا نجمع بيانات شخصية من الأطفال (أو من أي مستخدم)</h3>
+<ul>
+<li>لا حساب، لا تسجيل دخول، لا اسم، لا بريد إلكتروني، لا رقم هاتف.</li>
+<li>لا نستخدم معرّفات إعلانية (Advertising ID) ولا أي مُعرِّف ثابت آخر.</li>
+<li>لا نُرسل أي بيانات إلى خوادم خارجية.</li>
+</ul>
+<h3 id="82">8.2 لا إعلانات ولا تتبّع</h3>
+<ul>
+<li>لا توجد إعلانات داخل التطبيق إطلاقًا.</li>
+<li>لا نتعامل مع أي شبكة إعلانية أو طرف ثالث للتسويق.</li>
+<li>لا نستخدم أدوات Analytics أو Crash Reporting خارجية.</li>
+</ul>
+<h3 id="83">8.3 محتوى آمن</h3>
+<ul>
+<li>لا يحتوي التطبيق على روابط خارجية لمحتوى غير لائق.</li>
+<li>المحتوى داخل التطبيق (الأذكار، آيات قرآنية، حِكَم، تنبيهات) عربي/إنجليزي محتشم ومناسب لجميع الأعمار.</li>
+<li>لا توجد مراسلات بين المستخدمين ولا محتوى مُولَّد من مستخدمين آخرين.</li>
+</ul>
+<h3 id="84">8.4 الالتزام بقوانين حماية الأطفال</h3>
+<p>نلتزم بـ:
+- <strong>COPPA</strong> (Children's Online Privacy Protection Act) — الولايات المتحدة، لمن هم دون 13.
+- <strong>GDPR-K</strong> (المادة 8 من GDPR) — الاتحاد الأوروبي، لمن هم دون 16.
+- <strong>Google Play Families Policy</strong> — متطلبات Google للتطبيقات الموجَّهة للأطفال أو الجمهور المختلط.</p>
+<hr />
+<h2 id="9">9. تغييرات على هذه السياسة</h2>
+<p>قد نُحدّث هذه السياسة من وقت لآخر. أي تغيير جوهري سيُعلَن داخل التطبيق و/أو على صفحة التطبيق في Google Play. التاريخ في أعلى الصفحة يعكس آخر تحديث.</p>
+<hr />
+<h2 id="10">10. التواصل</h2>
+<p>لأي استفسار أو طلب بخصوص الخصوصية:</p>
+<ul>
+<li><strong>البريد الإلكتروني:</strong> abdulrhman.qt@gmail.com</li>
+<li><strong>المطوّر:</strong> Abdulrhman Alburaym</li>
+</ul>
+<hr />
+<h2 id="11-google-play">11. الالتزام بسياسات Google Play</h2>
+<p>نلتزم بـ:
+- <a href="https://support.google.com/googleplay/android-developer/answer/10144311">سياسة بيانات المستخدم لـ Google Play</a>
+- <a href="https://support.google.com/googleplay/android-developer/answer/9914283">سياسة الإشعارات وإمكانية الوصول</a>
+- <a href="https://support.google.com/googleplay/android-developer/answer/9893335">Google Play Families Policy</a>
+- <a href="https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa">قانون COPPA الأمريكي</a>
+- <a href="https://gdpr.eu/">قواعد القانون العام لحماية البيانات GDPR</a> (للمستخدمين في أوروبا، بما فيهم القاصرون)
+- <a href="https://oag.ca.gov/privacy/ccpa">قانون CCPA</a> (للمستخدمين في كاليفورنيا)</p>
+<hr />
+<p><strong>ملخص في سطر واحد:</strong> بَصيرة تعمل <strong>محليًا بالكامل</strong> على جهازك، ولا ترسل بياناتك لأي مكان.</p>
+        </article>
+    </div>
+</body>
+</html>
